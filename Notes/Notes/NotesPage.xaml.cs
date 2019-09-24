@@ -12,6 +12,7 @@ namespace Notes
         public NotesPage()
         {
             InitializeComponent();
+            
         }
 
         protected override async void OnAppearing()

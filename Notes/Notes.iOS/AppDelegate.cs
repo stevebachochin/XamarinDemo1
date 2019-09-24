@@ -20,6 +20,12 @@ namespace Notes.iOS
         //
         // You have 17 seconds to return from this method, or iOS will terminate your application.
         //
+        /**
+        public override UIWindow Window {
+            get => base.Window;
+            set => base.Window = value;
+        }
+        **/
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();

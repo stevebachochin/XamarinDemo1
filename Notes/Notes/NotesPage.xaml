@@ -8,6 +8,7 @@
         <Style TargetType="{x:Type ListView}">
             <Setter Property="BackgroundColor"
                     Value="{StaticResource AppBackgroundColor}" />
+
         </Style>
     </ContentPage.Resources>
     <ContentPage.ToolbarItems>
@@ -16,11 +17,42 @@
     </ContentPage.ToolbarItems>
     <ListView x:Name="listView"
               Margin="20"
-              ItemSelected="OnListViewItemSelected">
+              ItemSelected="OnListViewItemSelected"
+              HasUnevenRows = "true"
+              >
         <ListView.ItemTemplate>
             <DataTemplate>
+                
+                <ViewCell>
+                    <StackLayout BackgroundColor="#fff"
+                        Orientation="Horizontal"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="{Binding Text}"
+                                TextColor="#2C6F3A" 
+                                HorizontalTextAlignment="Start"
+                                Font="Bold"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                />
+                            <Label Text="{Binding Date}"
+                                HorizontalOptions="EndAndExpand"
+                                TextColor="Black" />
+                    </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+
+                <!--
                 <TextCell Text="{Binding Text}"
-                          Detail="{Binding Date}" />
+                          Detail="{Binding Date}" 
+                          TextColor="#347C43"
+                         
+                          DetailColor="#000000"
+
+                          
+                          />
+                -->
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

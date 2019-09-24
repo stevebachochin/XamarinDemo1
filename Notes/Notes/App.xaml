@@ -7,12 +7,13 @@
              x:Class="Notes.App">
     <Application.Resources>
 
-        <Thickness x:Key="PageMargin">20</Thickness>
+        
 
         <!-- Colors -->
         <Color x:Key="AppBackgroundColor">WhiteSmoke</Color>
         <Color x:Key="iOSNavigationBarColor">WhiteSmoke</Color>
-        <Color x:Key="AndroidNavigationBarColor">#2196F3</Color>
+        <!--<Color x:Key="AndroidNavigationBarColor">#2196F3</Color>-->
+        <Color x:Key="AndroidNavigationBarColor">#2b6a38</Color>
         <Color x:Key="iOSNavigationBarTextColor">Black</Color>
         <Color x:Key="AndroidNavigationBarTextColor">White</Color>
 
